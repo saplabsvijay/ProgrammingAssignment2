@@ -3,9 +3,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-## This function stores the matrix in cache and inverse 
-## of the matrix as well. 
-## Provides getters and setters to both matrices 
+## This function stores the matrix and inverse of it in the cache
+## Provides getters and setters for both matrices 
 makeCacheMatrix <- function(x = matrix()) {
         mat_inverse <- NULL
         set_matrices <- function(y) {
@@ -22,9 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-## This function tries to read the inverse of the matrix
+## This function tries to read the inverse of the matrix from the cache
 ## If not found, computes the inverse using R solve function and
-## writes into cache
+## writes into cache using function set_inverse
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         mat_inverse <- x$get_inverse()
